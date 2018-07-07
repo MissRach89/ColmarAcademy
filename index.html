@@ -2,32 +2,47 @@
 <html>
 
   <head>
-    <!-- The HTML Title element (<title>) defines the document's title that is shown in a browser's title bar or a page's tab. -->
-    <title>Project Title</title>
-
-    <!-- Do you want FontAwesome icons with a remote CDN link?
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css"> -->
-
-    <!-- Or do you want FontAwesome icons with a local link? https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
-    <link rel="stylesheet" type="text/css" href="resources/css/font-awesome.css"> -->
-
+    <title>Colmar Academy</title>
+    <meta name="author" content="Rachael Taylor">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:700|Roboto:400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-
-    <!-- Add a favicon. Create an ICO file https://www.favicon-generator.org/ and add to resources/img. Update file name below.
-    <link rel="icon" href="./resources/img/<favicon-name>.ico" type="image/x-icon"> -->
   </head>
 
   <body>
-    <!-- The HTML <body> Element represents the content of an HTML document. There can be only one <body> element in a document. -->
 
-    <header>
-      <!-- The HTML <header> element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, a search form, an author name, and so on. -->
+    <!-- Header Primary Navigation -->
+    <header id="navbar" class="flex">
+      <div class="flex logo">
+        <img id="logoimage" class="logoimage" src="./resources/images/ic-logo.svg" alt="Colmar Academy"/>
+        <h4 class="logotextheader"><strong style="color:#333;">Colmar</strong>Academy</h4>
+      </div>
+      <nav>
+        <div id="navlinks" class="flex">
+          <p><a href="#">On Campus</a></p>
+          <p><a href="#">Online</a></p>
+          <p><a href="#">Our Companies</a></p>
+          <p><a href="#">Sign In</a></p>
+        </div>
+      </nav>
     </header>
 
-    <nav>
-      <!-- The HTML <nav> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes. -->
-    </nav>
+    <!-- Feature Leader Banner -->
+    <div class="leader flex">
+      <div class="leaderimage-container">
+        <div class="leaderimage">
+        </div>
+      </div>
+      <div class="leadertext">
+        <h1>Learn something new everyday.</h1>
+        <h3>At Colmar, we offer hundreds of study possibilities.</h3>
+        <button><p><a href="#"> Start Here</a></p></button>
+      </div>
+    </div>
+
+
 
     <footer>
       <!-- The HTML <footer> element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents. -->
