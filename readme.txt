@@ -1,0 +1,1 @@
+This project was created by Rachael Taylor and is the Capstone project for the Codecademy course in the class "Build Websites From Scratch" 2018.
