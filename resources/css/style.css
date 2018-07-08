@@ -118,6 +118,10 @@ p em {
   font-style: italic;
 }
 
+blockquote {
+  margin-bottom: 0.5rem;
+}
+
 /* General Button styling */
 
 button {
@@ -178,18 +182,6 @@ header .container {
   color: white;
 }
 
-#leadertext button {
-  font-size: 1.25rem; /* supersized button for CTA */
-  width: 100%;
-  padding: 1rem;
-  transition: all 400ms linear;
-}
-
-#leadertext button:hover {
-  background-color: royalblue;
-  font-weight: 700;
-}
-
 
 /* Graphic panel for style floating over the laderpanel */
 
@@ -238,22 +230,38 @@ header .container {
   padding-left: 1rem;
 }
 
+#leadertext button {
+  font-size: 1.25rem; /* supersized button for CTA */
+  width: 80%;
+  padding: 1rem;
+  transition: all 400ms linear;
+}
+
+#leadertext button:hover {
+  background-color: royalblue;
+  font-weight: 700;
+}
+
 /* Information styles */
 
 #information .container {
   padding: 2rem 0 2rem 0;
 }
 
-.info-article-text a {
-  text-decoration: none;
-  padding: 0.5rem;
-  border: solid 2px royalblue;
-  border-radius: 0.25rem;
-  background-color: white;
+.leftcolumn img {
+  margin-bottom: 2rem;
+}
+
+.info-article {
+  border-bottom: solid 1px #e5e5e5;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .info-article-img {
-  width: 35%;
+  max-width: 35%;
+  margin: 0;
 }
 
 .info-article-img img {
@@ -261,6 +269,17 @@ header .container {
   height: auto;
 }
 
+.info-article-text {
+  display: block;
+  width: 65%;
+  align-items: center;
+}
+
+.info-article-text div {
+  padding: 0 0 0 1.5rem;
+  flex-direction: row;
+  align-items: center;
+}
 
 /* Courses Styles */
 
