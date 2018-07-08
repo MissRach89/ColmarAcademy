@@ -124,6 +124,19 @@ blockquote {
   margin-bottom: 0.5rem;
 }
 
+/* Featured badge and other graphical element styling */
+
+#featured-badge {
+  font-size: 0.75rem;
+  background-color: lightslategray;
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  top: -0.5rem;
+  margin-left: 0.5rem;
+  opacity: 0.5;
+}
+
 /* General Button styling */
 
 button {
@@ -289,19 +302,6 @@ header .container {
 
 #information .info-article:nth-child(3n + 0) {
   background-color: #f9fafb;
-  margin: 0;
-  padding: 0;
-}
-
-#featured-badge {
-  font-size: 0.75rem;
-  background-color: lightslategray;
-  color: white;
-  border-radius: 0.25rem;
-  padding: 0.25rem 0.5rem;
-  top: -0.5rem;
-  margin-left: 0.5rem;
-  opacity: 0.5;
 }
 
 /* Courses Styles */
@@ -367,6 +367,11 @@ header .container {
 .leftcolumn video {
   margin-bottom: 2rem;
 }
+
+#thesis .info-article:nth-child(3n + 1) {
+  background-color: #f9fafb;
+}
+
 
 /* Footer styles */
 
