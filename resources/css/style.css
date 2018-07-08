@@ -20,7 +20,7 @@ body {
 }
 
 .leftcolumn {
-  width: 60%
+  width: 60%;
 }
 
 .rightcolumn {
@@ -39,7 +39,7 @@ h1 {
 
 h2 {
   font-family: "Dosis", "Helvetica", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 3rem;
   padding-bottom: 1.5rem;
   color: #333333;
@@ -47,8 +47,8 @@ h2 {
 
 h3 {
   font-family: "Dosis", "Helvetica", sans-serif;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   padding-bottom: 1.5rem;
   color: lightslategray;
 }
@@ -178,6 +178,81 @@ header .container {
 
 #leadertext i {
   padding-left: 1rem;
+}
+
+/* Information styles */
+
+#information .container {
+  padding: 2rem 0 2rem 0;
+}
+
+/* .info-article {
+  padding: 1rem;
+} */
+
+.info-article-text a {
+  text-decoration: none;
+  padding: 0.5rem;
+  border: solid 2px royalblue;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+
+.info-article-img {
+  width: 35%;
+}
+
+.info-article-img img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Courses Styles */
+
+#courses {
+  background-color: royalblue;
+}
+
+.courses-container {
+  max-width: 100%;
+  margin: 0 5rem;
+}
+
+.feature-heading {
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+
+.course-content {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+#courses h2 {
+  text-align: center;
+  color: white;
+}
+
+.course-card {
+  background-color: white;
+  transition: box-shadow 0.7s ease;
+  max-width: 28%;
+  margin: 1rem 1rem;
+}
+
+.course-card:hover {
+  box-shadow: 0.25rem 0.25rem 1rem 0px rgba(0,0,0,0.55);
+  cursor: pointer;
+}
+
+.course-card-img img {
+  width: 100%;
+  height: auto;
+}
+
+.course-card-text {
+  padding: 1.5rem;
 }
 
 /* Footer styles */
