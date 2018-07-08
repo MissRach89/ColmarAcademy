@@ -31,11 +31,22 @@ body {
   width: 40%;
 }
 
-/* Slideshow */
+/* Slideshow Carousel */
 
 .mySlides {
   display:none;
 }
+
+.carouselfade {
+  animation:fading 6s infinite
+}
+
+@keyframes fading{
+  0%{opacity:0.8}
+  50%{opacity:1}
+  100%{opacity:0.8}
+}
+
 
 /* Typography Styles */
 
@@ -122,7 +133,7 @@ button {
 }
 
 button:hover {
-  background-color: royalblue;
+  background-color: dodgerblue;
 }
 
 /* Header Styles >> General */
@@ -167,6 +178,31 @@ header .container {
   color: white;
 }
 
+#leadertext button {
+  font-size: 1.25rem; /* supersized button for CTA */
+  width: 100%;
+  padding: 1rem;
+  transition: all 400ms linear;
+}
+
+#leadertext button:hover {
+  background-color: royalblue;
+  font-weight: 700;
+}
+
+
+/* Graphic panel for style floating over the laderpanel */
+
+.graphic-lines {
+  position: absolute;
+  top: 2rem;
+  left: -3rem;
+  z-index: 99;
+  width: 25%;
+  height: auto;
+  opacity: 0.8;
+}
+
 /* Leader Styles >> General */
 
 .leader {
@@ -196,15 +232,6 @@ header .container {
 
 #leadertext div {
   padding-right: 15%;
-}
-
-#leadertext a {
-  color: white;
-  padding: 0.5rem 2rem 0.7rem 2rem;
-  border-radius: 0.25rem;
-  text-decoration: none;
-  background-color: royalblue;
-  align: center;
 }
 
 #leadertext i {
@@ -238,7 +265,9 @@ header .container {
 /* Courses Styles */
 
 #courses {
-  background-color: dodgerblue;
+  background-repeat: repeat;
+  background:linear-gradient(0deg,rgba(96,0,247,0.55),rgba(72,106,218,1)),url("../../resources/images/funky-lines.png");
+
 }
 
 .courses-container {
@@ -265,6 +294,7 @@ header .container {
   background-color: white;
   transition: box-shadow 0.7s ease;
   max-width: 28%;
+  min-width: 10rem;
   margin: 1rem 1rem;
 }
 
@@ -285,7 +315,7 @@ header .container {
 /* Footer styles */
 
 footer {
-  border-top: 1px solid royalblue;
+  border-top: 1px solid dodgerblue;
 }
 
 footer .container {
