@@ -33,7 +33,7 @@
 
   <!-- Floating graphic over leader Banner -->
 
-  <div class="graphic-lines">
+  <div class="graphic-lines" role="presentation">
     <img src="./resources/images/graphic-lines.svg"/>
   </div>
 
@@ -82,10 +82,12 @@
             <img src="./resources/images/information-orientation.jpg" alt="Student Orientation Services Photo"/>
           </div>
           <div class="info-article-text flex">
-            <div class="flex">
+            <div class="text-content flex">
               <h3>Orientation Date</h3>
               <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <p><a href="#">Read More</a></p>
+              <div>
+                <button>Read More</button>
+              </div>
             </div>
           </div>
         </div>
@@ -94,10 +96,12 @@
           <div class="info-article-img">
             <img src="./resources/images/information-campus.jpg" alt="Our Campus Photo"/>
           </div>
-          <div class="info-article-text">
-            <h3>Our Campus</h3>
-            <p>Find which campus is close by you</p>
-            <p><a href="#">Read More</a></p>
+          <div class="info-article-text flex">
+            <div class="text-content flex">
+              <h3>Our Campus</h3>
+              <p>Find which campus is close by you</p>
+              <button>Read More</button>
+            </div>
           </div>
         </div>
 
@@ -106,9 +110,11 @@
             <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack Headshot Photo"/>
           </div>
           <div class="info-article-text">
-            <h3>Our Guest lecture</h3>
-            <p>Jion a keynote with Oliver Sack about music in medical treatment</p>
-            <p><a href="#">Read More</a></p>
+            <div class="text-content flex">
+              <h3>Our Guest lecture<span id="featured-badge">FEATURED</span></h3>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <button>Read More</button>
+            </div>
           </div>
         </div>
 
@@ -206,12 +212,64 @@
 
       </div>
 
-
       </div>
     </div>
   </div>
 
   <!-- Thesis exhibit at Colmar -->
+
+  <!-- General information and articles -->
+  <div id="thesis" class="flex">
+    <div class="container flex">
+
+      <div class="feature-heading">
+        <h2><i class="fa fa-book"></i><br>Thesis Exhibit</h2>
+      </div>
+
+      <div class="leftcolumn">
+        <div class="leftcolumn-wrapper">
+          <video src="./resources/video/thesis.mp4" width="100%" height="auto" controls> Video not supported </video>
+          <h2>Reimagine Urban</h2>
+          <blockquote>
+            <p><i class="fa fa-quote-left"></i> Urban SmARTworks is a Reston-based 501(c)(3) nonprofit organization that provides opportunities for contemporary artists and local youth to work together to create public works of art. The project goal is to empower young people through professional opportunities in the arts. Discover one of the public locations used in the SmARTworks Thesis project on urban renewal above.</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="rightcolumn flex">
+
+        <div class="info-article flex">
+          <div class="info-article-img">
+            <img src="./resources/images/thesis-fisma.jpg" alt="Student Orientation Services Photo"/>
+          </div>
+          <div class="info-article-text flex">
+            <div class="text-content flex">
+              <h3>Fisma : Design and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
+              <div>
+                <button>Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-article flex">
+          <div class="info-article-img">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="Our Campus Photo"/>
+          </div>
+          <div class="info-article-text flex">
+            <div class="text-content flex">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 
   <!-- Footer Panel -->
   <footer>
