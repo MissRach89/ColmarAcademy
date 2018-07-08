@@ -14,33 +14,37 @@
   <body>
 
   <!-- Header Primary Navigation -->
-  <header class="flex">
+  <header id="navigation" class="flex">
     <div class="container flex">
       <div class="flex logo">
         <img src="./resources/images/ic-logo.svg" alt="Colmar Academy"/>
         <h4 class="logotextheader"><strong style="color:#333;">Colmar</strong>Academy</h4>
       </div>
-      <nav>
+      <nav class="flex">
         <div class="navlinks flex">
-          <p><a href="#">On Campus</a></p>
-          <p><a href="#">Online</a></p>
-          <p><a href="#">Our Companies</a></p>
-          <p><a href="#">Sign In</a></p>
+          <button name="On Campus" role="menuitem">On Campus</button>
+          <button name="Online" role="menuitem">Online</button>
+          <button name="Our Companies" role="menuitem">Our Companies</button>
+          <button name="Sign In" role="menuitem">Sign In</button>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <!-- Feature Leader Banner -->
   <div id="leader" class="leader flex">
     <div class="container flex">
       <div class="leftcolumn">
-        <img src="./resources/images/banner-s.jpg" alt="Students reading at Colmar Academy"/>
+        <div class="leftcolumn-wrapper">
+          <img src="./resources/images/banner-s.jpg" alt="Students reading at Colmar Academy"/>
+        </div>
       </div>
       <div id="leadertext" class="rightcolumn">
-        <h1>Learn something new everyday.</h1>
-        <h3>At Colmar, we offer hundreds of study possibilities.</h3>
-        <p><a href="#">Start Here<i class="fa fa-chevron-right"></i></a></p>
+        <div>
+          <h1>Learn something new everyday.</h1>
+          <h3>At Colmar, we offer hundreds of study possibilities.</h3>
+          <p><a href="#">Start Here<i class="fa fa-chevron-right"></i></a></p>
+        </div>
       </div>
     </div>
   </div>
@@ -50,13 +54,15 @@
     <div class="container flex">
 
       <div class="leftcolumn">
-        <img src="./resources/images/information-main.jpg" alt="Image of student at Colmar Academy"/>
-        <h2>It doesn't hurt to keep practicing</h2>
-        <blockquote>
-          <p><i class="fa fa-quote-left"></i> With the pace of change getting faster and faster, I wanted to be able to learn new skills today and use them tomorrow. Colmar Academy helped me to do just that. I took a 12 week short course in Leadership and Team Management and feel I gained that EXTRA edge in the real world.</p>
-          <br>
-          <p><em>– Emanuel, Sr Strategist at <a href="#">Hiring.com</a></em></p>
-        </blockquote>
+        <div class="leftcolumn-wrapper">
+          <img src="./resources/images/information-main.jpg" alt="Image of student at Colmar Academy"/>
+          <h2>It doesn't hurt to keep practicing</h2>
+          <blockquote>
+            <p><i class="fa fa-quote-left"></i> With the pace of change getting faster and faster, I wanted to be able to learn new skills today and use them tomorrow. Colmar Academy helped me to do just that. I took a 12 week short course in Leadership and Team Management and feel I gained that EXTRA edge in the real world.</p>
+            <br>
+            <p><em>– Emanuel, Sr Strategist at <a href="#">Hiring.com</a></em></p>
+          </blockquote>
+        </div>
       </div>
 
       <div class="rightcolumn">
@@ -65,7 +71,7 @@
           <div class="info-article-img">
             <img src="./resources/images/information-orientation.jpg" alt="Student Orientation Services Photo"/>
           </div>
-          <div class="info-article-text">
+          <div class="info-article-text flex">
             <h3>Orientation Date</h3>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
             <p><a href="#">Read More</a></p>
