@@ -3,6 +3,7 @@
 
   <head>
     <title>Colmar Academy</title>
+    <meta charset="UTF-8">
     <meta name="author" content="Rachael Taylor">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:700|Roboto:400,700" rel="stylesheet">
@@ -12,12 +13,15 @@
   </head>
 
   <body>
+  <main>
 
   <!-- Header Primary Navigation -->
   <header id="navigation" class="flex">
     <div class="container flex">
       <div class="flex logo">
-        <img src="./resources/images/ic-logo.svg" alt="Colmar Academy"/>
+        <figure>
+          <img src="./resources/images/ic-logo.svg" alt="Colmar Academy"/>
+        </figure>
         <h4 class="logotextheader"><strong style="color:#333;">Colmar</strong>Academy</h4>
       </div>
       <nav class="flex">
@@ -38,11 +42,11 @@
   </div>
 
   <!-- Feature Leader Banner -->
-  <div id="leader" class="leader flex">
+  <section id="leader" class="leader flex">
     <div class="container flex">
       <div class="leftcolumn">
 
-        <div class="leftcolumn-wrapper">
+        <div class="leftcolumn-wrapper" role="presentation">
           <img class="mySlides carouselfade" src="./resources/images/banner-s.jpg" alt="Students reading at Colmar Academy">
           <img class="mySlides carouselfade" src="./resources/images/banner-s2.jpg" alt="Students reading at Colmar Academy">
           <img class="mySlides carouselfade" src="./resources/images/banner-s3.jpg" alt="Students reading at Colmar Academy">
@@ -57,15 +61,17 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- General information and articles -->
-  <div id="information" class="flex">
+  <section id="information" class="flex">
     <div class="container flex">
 
       <div class="leftcolumn">
         <div class="leftcolumn-wrapper">
-          <img src="./resources/images/information-main.jpg" alt="Image of student at Colmar Academy"/>
+          <figure>
+            <img src="./resources/images/information-main.jpg" alt="Image of student at Colmar Academy"/>
+          </figure>
           <h2>It doesn't hurt to keep practicing</h2>
           <blockquote>
             <p><i class="fa fa-quote-left"></i> With the pace of change getting faster and faster, I wanted to be able to learn new skills today and use them tomorrow. Colmar Academy helped me to do just that. I took a 12 week short course in Leadership and Team Management and feel I gained that EXTRA edge in the real world.</p>
@@ -75,16 +81,16 @@
         </div>
       </div>
 
-      <div class="rightcolumn">
+      <aside class="rightcolumn">
 
         <div class="info-article flex">
-          <div class="info-article-img">
+          <figure class="info-article-img">
             <img src="./resources/images/information-orientation.jpg" alt="Student Orientation Services Photo"/>
-          </div>
+          </figure>
           <div class="info-article-text flex">
             <div class="text-content flex">
               <h3>Orientation Date</h3>
-              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <time><p>Tue 10/11 & Wed 10/12: 8am-3pm</p></time>
               <div>
                 <button>Read More</button>
               </div>
@@ -93,9 +99,9 @@
         </div>
 
         <div class="info-article flex">
-          <div class="info-article-img">
+          <figure class="info-article-img">
             <img src="./resources/images/information-campus.jpg" alt="Our Campus Photo"/>
-          </div>
+          </figure>
           <div class="info-article-text flex">
             <div class="text-content flex">
               <h3>Our Campus</h3>
@@ -106,19 +112,19 @@
         </div>
 
         <div class="info-article flex">
-          <div class="info-article-img">
+          <figure class="info-article-img">
             <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack Headshot Photo"/>
-          </div>
+          </figure>
           <div class="info-article-text">
             <div class="text-content flex">
-              <h3>Our Guest lecture<span id="featured-badge">FEATURED</span></h3>
+              <h3>Our Guest lecture<label id="featured-badge">FEATURED</label></h3>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
               <button>Read More</button>
             </div>
           </div>
         </div>
 
-      </div>
+      </aside>
     </div>
   </div>
 
@@ -134,9 +140,9 @@
         <div class="course-content flex">
 
             <div class="course-card">
-              <div class="course-card-img">
+              <figure class="course-card-img">
                 <img src="./resources/images/course-software.jpg" alt="Computer Photo"/>
-              </div>
+              </figure>
               <div class="course-card-text">
                 <h3>Software engineering</h3>
                 <h4>courses</h4>
@@ -145,9 +151,9 @@
             </div>
 
             <div class="course-card">
-              <div class="course-card-img">
+              <figure class="course-card-img">
                 <img src="./resources/images/course-computer-art.jpg" alt="Computer Art Photo"/>
-              </div>
+              </figure>
               <div class="course-card-text">
                 <h3>Computer art</h3>
                 <h4>courses</h4>
@@ -156,9 +162,9 @@
             </div>
 
             <div class="course-card">
-              <div class="course-card-img">
+              <figure class="course-card-img">
                 <img src="./resources/images/course-design.jpg" alt="Design and Photography Photo"/>
-              </div>
+              </figure>
               <div class="course-card-text">
                 <h3>Design</h3>
                 <h4>courses</h4>
@@ -167,9 +173,9 @@
             </div>
 
           <div class="course-card">
-            <div class="course-card-img">
+            <figure class="course-card-img">
               <img src="./resources/images/course-data.jpg" alt="Data Laptop Photo"/>
-            </div>
+            </figure>
             <div class="course-card-text">
               <h3>Data</h3>
               <h4>courses</h4>
@@ -178,9 +184,9 @@
           </div>
 
           <div class="course-card">
-            <div class="course-card-img">
+            <figure class="course-card-img">
               <img src="./resources/images/course-business.jpg" alt="Business Chess Pieces Photo"/>
-            </div>
+            </figure>
             <div class="course-card-text">
               <h3>Business</h3>
               <h4>courses</h4>
@@ -189,9 +195,9 @@
           </div>
 
           <div class="course-card">
-            <div class="course-card-img">
+            <figure class="course-card-img">
               <img src="./resources/images/course-marketing.jpg" alt="Marketing Course Photo"/>
-            </div>
+            </figure>
             <div class="course-card-text">
               <h3>Marketing</h3>
               <h4>courses</h4>
@@ -214,19 +220,19 @@
 
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Thesis exhibit at Colmar -->
 
   <!-- General information and articles -->
-  <div id="thesis" class="flex">
+  <section id="thesis" class="flex">
     <div class="container flex">
 
       <div class="feature-heading">
         <h2><i class="fa fa-book"></i><br>Thesis Exhibit</h2>
       </div>
 
-      <div class="leftcolumn">
+      <article class="leftcolumn">
         <div class="leftcolumn-wrapper">
           <video src="./resources/video/thesis.mp4" width="100%" height="auto" controls> Video not supported </video>
           <h2>Reimagine Urban</h2>
@@ -234,17 +240,17 @@
             <p><i class="fa fa-quote-left"></i> Urban SmARTworks is a Reston-based 501(c)(3) nonprofit organization that provides opportunities for contemporary artists and local youth to work together to create public works of art. The project goal is to empower young people through professional opportunities in the arts. Discover one of the public locations used in the SmARTworks Thesis project on urban renewal above.</p>
           </blockquote>
         </div>
-      </div>
+      </article>
 
-      <div class="rightcolumn">
+      <aside class="rightcolumn">
 
         <div class="info-article flex">
-          <div class="info-article-img">
+          <figure class="info-article-img">
             <img src="./resources/images/thesis-fisma.jpg" alt="Student Orientation Services Photo"/>
-          </div>
+          </figure>
           <div class="info-article-text flex">
             <div class="text-content flex">
-              <h3>Fisma : Design and Prototype<span id="featured-badge">FEATURED</span></h3>
+              <h3>Fisma : Design and Prototype<label id="featured-badge">FEATURED</label></h3>
               <p>Designer showcase of new prototype product</p>
               <div>
                 <button>Read More</button>
@@ -254,9 +260,9 @@
         </div>
 
         <div class="info-article flex">
-          <div class="info-article-img">
+          <figure class="info-article-img">
             <img src="./resources/images/thesis-now-and-then.jpg" alt="Our Campus Photo"/>
-          </div>
+          </figure>
           <div class="info-article-text flex">
             <div class="text-content flex">
               <h3>Now and then</h3>
@@ -266,9 +272,9 @@
           </div>
         </div>
 
-      </div>
+      </aside>
     </div>
-  </div>
+  </section>
 
 
   <!-- Footer Panel -->
@@ -305,5 +311,6 @@
   }
   </script>
 
+</main>
 </body>
 </html>
