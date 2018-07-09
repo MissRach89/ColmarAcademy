@@ -4,7 +4,7 @@
   <head>
     <title>Colmar Academy</title>
     <meta charset="UTF-8">
-    <meta name="author" content="Rachael Taylor">
+    <meta name="author" content="Rach Taylor">
 
     <!-- Link to FontAwesome external stylesheet for most graphical icons on site -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
@@ -20,9 +20,10 @@
   <body>
   <main>
 
+
   <!-- SECTION >> Header Primary Navigation including logo and main navigation for site -->
 
-  <header id="navigation" class="flex">
+  <header id="navigation" class="flex" role="menubar">
     <div class="container flex">
 
       <!-- Website logo -->
@@ -34,7 +35,7 @@
       </div>
 
       <!-- Primary navigation -->
-      <nav class="flex">
+      <nav class="flex" role="navigation">
         <div class="navlinks flex">
           <button name="On Campus" role="menuitem">On Campus</button>
           <button name="Online" role="menuitem">Online</button>
@@ -46,11 +47,13 @@
     </div>
   </header>
 
+
   <!-- FEATURE GRAPHIC >> Decorative element wich floats over leader panel -->
 
   <div class="graphic-lines" role="presentation">
     <img src="./resources/images/graphic-lines.svg"/>
   </div>
+
 
   <!-- SECTION >> Feature leader banner with slideshow and primary call to action -->
 
@@ -71,7 +74,7 @@
         <div>
           <h1>Learn something new everyday.</h1>
           <h3>At Colmar, we offer hundreds of study possibilities.</h3>
-          <button name="Start Here">Start Here<i class="fa fa-chevron-right"></i></button>
+          <button name="Start Here" role="button">Start Here<i class="fa fa-chevron-right"></i></button>
         </div>
       </div>
 
@@ -93,13 +96,13 @@
           <blockquote>
             <p><i class="fa fa-quote-left"></i> With the pace of change getting faster and faster, I wanted to be able to learn new skills today and use them tomorrow. Colmar Academy helped me to do just that. I took a 12 week short course in Leadership and Team Management and feel I gained that EXTRA edge in the real world.</p>
             <br>
-            <p><em>– Emanuel, Sr Strategist at <a href="#">Hiring.com</a></em></p>
+            <p><em>– Emanuel, Sr Strategist at <a href="#" role="link">Hiring.com</a></em></p>
           </blockquote>
         </div>
       </div>
 
       <!-- Information Panels -->
-      <aside class="rightcolumn">
+      <aside class="rightcolumn" role="complementary">
 
         <!-- Info > Orientation -->
         <div class="info-article flex">
@@ -110,7 +113,7 @@
             <summary class="text-content flex">
               <h3>Orientation Date</h3>
               <time><p>Tue 10/11 & Wed 10/12: 8am-3pm</p></time>
-              <button>Read More</button>
+              <button role="button">Read More</button>
             </summary>
           </div>
         </div>
@@ -124,7 +127,7 @@
             <summary class="text-content flex">
               <h3>Our Campus</h3>
               <p>Find which campus is close by you</p>
-              <button>Read More</button>
+              <button role="button">Read More</button>
             </summary>
           </div>
         </div>
@@ -138,7 +141,7 @@
             <summary class="text-content flex">
               <h3>Our Guest lecture<label id="featured-badge">FEATURED</label></h3>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-              <button>Read More</button>
+              <button role="button">Read More</button>
             </summary>
           </div>
         </div>
@@ -148,6 +151,7 @@
     </div>
   </section>
 
+
   <!-- SECTION >> Courses and activities card panels -->
 
   <section id="courses">
@@ -155,7 +159,7 @@
 
 			<!-- Section title -->
       <div class="feature-heading">
-        <h2><i class="fa fa-graduation-cap"></i><br>Start Learning</h2>
+        <h2 role="heading"><i class="fa fa-graduation-cap"></i><br>Start Learning</h2>
       </div>
 
       <div class="course-content flex">
@@ -237,18 +241,19 @@
     </div>
   </section>
 
-  <!-- SECTION >> Thesis exhibit at Colmar -->
 
-	<!-- WARNING: I have not yet completed organising the HTML with indents and commenting below...  -->
+  <!-- SECTION >> Thesis exhibit at Colmar -->
 
   <section id="thesis" class="flex">
     <div class="container flex">
 
+      <!-- Section title -->
       <div class="feature-heading">
-        <h2><i class="fa fa-book"></i><br>Thesis Exhibit</h2>
+        <h2 role="heading"><i class="fa fa-book"></i><br>Thesis Exhibit</h2>
       </div>
 
-      <article class="leftcolumn">
+      <!-- Feature article -->
+      <article class="leftcolumn" role="complementary">
         <div class="leftcolumn-wrapper">
           <video src="./resources/video/thesis.mp4" width="100%" height="auto" controls> Video not supported </video>
           <h2>Reimagine Urban</h2>
@@ -258,8 +263,10 @@
         </div>
       </article>
 
+      <!-- Supporting articles -->
       <aside class="rightcolumn">
 
+        <!-- Article 1 -->
         <div class="info-article flex">
           <figure class="info-article-img">
             <img src="./resources/images/thesis-fisma.jpg" alt="Student Orientation Services Photo"/>
@@ -268,11 +275,12 @@
             <summary class="text-content flex">
               <h3>Fisma : Design and Prototype<label id="featured-badge">FEATURED</label></h3>
               <p>Designer showcase of new prototype product</p>
-              <button>Read More</button>
+              <button role="button">Read More</button>
             </summary>
           </div>
         </div>
 
+        <!-- Article 2 -->
         <div class="info-article flex">
           <figure class="info-article-img">
             <img src="./resources/images/thesis-now-and-then.jpg" alt="Our Campus Photo"/>
@@ -281,7 +289,7 @@
             <summary class="text-content flex">
               <h3>Now and then</h3>
               <p>Research study about New York</p>
-              <button>Read More</button>
+              <button role="button">Read More</button>
             </summary>
           </div>
         </div>
@@ -291,22 +299,23 @@
   </section>
 
 
-  <!-- Website Footer Panel -->
+  <!-- FOOTER >> Website Footer Panel -->
+
   <footer>
     <div class="container flex">
-      <div class="copyright">
+      <div class="copyright" role="contentinfo">
         <p>&copy; 2018 Colmar Academy. All rights reserved</p>
       </div>
       <div class="footernav flex">
         <nav class="flex">
-          <p><a href="#">Terms</a></p>
-          <p><a href="#">Privacy</a></p>
+          <p><a href="#" role="link">Terms</a></p>
+          <p><a href="#" role="link">Privacy</a></p>
         </nav>
       </div>
     </div>
   </footer>
 
-  <!-- Carousel Javascript for animation of leader feature panel slide and fade transitions -->
+  <!-- SCRIPT >> Carousel Javascript for animation of leader feature panel slide and fade transitions -->
   <script>
   var myIndex = 0;
   carousel();
