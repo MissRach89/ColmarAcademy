@@ -244,16 +244,19 @@ header .container {
   padding-left: 1rem;
 }
 
+#leadertext h3 {
+  padding-bottom: 2rem;
+}
+
 #leadertext button {
   font-size: 1.25rem; /* supersized button for CTA */
-  width: 80%;
+  width: 100%;
   padding: 1rem;
   transition: all 400ms linear;
 }
 
 #leadertext button:hover {
   background-color: royalblue;
-  font-weight: 700;
 }
 
 /* Information styles */

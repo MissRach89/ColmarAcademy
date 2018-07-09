@@ -5,8 +5,13 @@
     <title>Colmar Academy</title>
     <meta charset="UTF-8">
     <meta name="author" content="Rachael Taylor">
+
+    <!-- Link to FontAwesome external stylesheet for most graphical icons on site -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!-- Link to Google Fonts external stylesheet for all Heading and Body fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dosis:700|Roboto:400,700" rel="stylesheet">
+
     <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
@@ -15,15 +20,20 @@
   <body>
   <main>
 
-  <!-- Header Primary Navigation -->
+  <!-- SECTION >> Header Primary Navigation including logo and main navigation for site -->
+
   <header id="navigation" class="flex">
     <div class="container flex">
+
+      <!-- Website logo -->
       <div class="flex logo">
         <figure>
           <img src="./resources/images/ic-logo.svg" alt="Colmar Academy"/>
         </figure>
         <h4 class="logotextheader"><strong style="color:#333;">Colmar</strong>Academy</h4>
       </div>
+
+      <!-- Primary navigation -->
       <nav class="flex">
         <div class="navlinks flex">
           <button name="On Campus" role="menuitem">On Campus</button>
@@ -32,27 +42,31 @@
           <button name="Sign In" role="menuitem">Sign In</button>
         </div>
       </nav>
+
     </div>
   </header>
 
-  <!-- Floating graphic over leader Banner -->
+  <!-- FEATURE GRAPHIC >> Decorative element wich floats over leader panel -->
 
   <div class="graphic-lines" role="presentation">
     <img src="./resources/images/graphic-lines.svg"/>
   </div>
 
-  <!-- Feature Leader Banner -->
+  <!-- SECTION >> Feature leader banner with slideshow and primary call to action -->
+
   <section id="leader" class="leader flex">
     <div class="container flex">
-      <div class="leftcolumn">
 
+      <!-- Slideshow carousel -->
+      <div class="leftcolumn">
         <div class="leftcolumn-wrapper" role="presentation">
           <img class="mySlides carouselfade" src="./resources/images/banner-s.jpg" alt="Students reading at Colmar Academy">
           <img class="mySlides carouselfade" src="./resources/images/banner-s2.jpg" alt="Students reading at Colmar Academy">
           <img class="mySlides carouselfade" src="./resources/images/banner-s3.jpg" alt="Students reading at Colmar Academy">
         </div>
-
       </div>
+
+      <!-- Call to action -->
       <div id="leadertext" class="rightcolumn">
         <div>
           <h1>Learn something new everyday.</h1>
@@ -60,13 +74,16 @@
           <button name="Start Here">Start Here<i class="fa fa-chevron-right"></i></button>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- General information and articles -->
+  <!-- SECTION >> General information and articles -->
+
   <section id="information" class="flex">
     <div class="container flex">
 
+      <!-- Testimonial -->
       <div class="leftcolumn">
         <div class="leftcolumn-wrapper">
           <figure>
@@ -81,150 +98,149 @@
         </div>
       </div>
 
+      <!-- Information Panels -->
       <aside class="rightcolumn">
 
+        <!-- Info > Orientation -->
         <div class="info-article flex">
           <figure class="info-article-img">
             <img src="./resources/images/information-orientation.jpg" alt="Student Orientation Services Photo"/>
           </figure>
           <div class="info-article-text flex">
-            <div class="text-content flex">
+            <summary class="text-content flex">
               <h3>Orientation Date</h3>
               <time><p>Tue 10/11 & Wed 10/12: 8am-3pm</p></time>
-              <div>
-                <button>Read More</button>
-              </div>
-            </div>
+              <button>Read More</button>
+            </summary>
           </div>
         </div>
 
+        <!-- Info > Campus -->
         <div class="info-article flex">
           <figure class="info-article-img">
             <img src="./resources/images/information-campus.jpg" alt="Our Campus Photo"/>
           </figure>
           <div class="info-article-text flex">
-            <div class="text-content flex">
+            <summary class="text-content flex">
               <h3>Our Campus</h3>
               <p>Find which campus is close by you</p>
               <button>Read More</button>
-            </div>
+            </summary>
           </div>
         </div>
 
+        <!-- Info > Guest Speakers -->
         <div class="info-article flex">
           <figure class="info-article-img">
             <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack Headshot Photo"/>
           </figure>
           <div class="info-article-text">
-            <div class="text-content flex">
+            <summary class="text-content flex">
               <h3>Our Guest lecture<label id="featured-badge">FEATURED</label></h3>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
               <button>Read More</button>
-            </div>
+            </summary>
           </div>
         </div>
 
       </aside>
-    </div>
-  </div>
 
-  <!-- Courses and activities at Colmar -->
-
-  <div id="courses">
-    <div id="overlay-courses-background">
-      <div class="courses-container flex">
-        <div class="feature-heading">
-          <h2><i class="fa fa-graduation-cap"></i><br>Start Learning</h2>
-        </div>
-
-        <div class="course-content flex">
-
-            <div class="course-card">
-              <figure class="course-card-img">
-                <img src="./resources/images/course-software.jpg" alt="Computer Photo"/>
-              </figure>
-              <div class="course-card-text">
-                <h3>Software engineering</h3>
-                <h4>courses</h4>
-                <p>Web Development, Mobile Development, iOT, APIs</p>
-              </div>
-            </div>
-
-            <div class="course-card">
-              <figure class="course-card-img">
-                <img src="./resources/images/course-computer-art.jpg" alt="Computer Art Photo"/>
-              </figure>
-              <div class="course-card-text">
-                <h3>Computer art</h3>
-                <h4>courses</h4>
-                <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
-              </div>
-            </div>
-
-            <div class="course-card">
-              <figure class="course-card-img">
-                <img src="./resources/images/course-design.jpg" alt="Design and Photography Photo"/>
-              </figure>
-              <div class="course-card-text">
-                <h3>Design</h3>
-                <h4>courses</h4>
-                <p>User Experience Design, User Research, Visual Design</p>
-              </div>
-            </div>
-
-          <div class="course-card">
-            <figure class="course-card-img">
-              <img src="./resources/images/course-data.jpg" alt="Data Laptop Photo"/>
-            </figure>
-            <div class="course-card-text">
-              <h3>Data</h3>
-              <h4>courses</h4>
-              <p>Data Science, Big Data, SQL, Data, Visualization</p>
-            </div>
-          </div>
-
-          <div class="course-card">
-            <figure class="course-card-img">
-              <img src="./resources/images/course-business.jpg" alt="Business Chess Pieces Photo"/>
-            </figure>
-            <div class="course-card-text">
-              <h3>Business</h3>
-              <h4>courses</h4>
-              <p>Product Development, Business Development, Startup</p>
-            </div>
-          </div>
-
-          <div class="course-card">
-            <figure class="course-card-img">
-              <img src="./resources/images/course-marketing.jpg" alt="Marketing Course Photo"/>
-            </figure>
-            <div class="course-card-text">
-              <h3>Marketing</h3>
-              <h4>courses</h4>
-              <p>Analytics, Content Marketing, Mobile Marketing</p>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- <div class="course-tabs">
-          <h3>Software engineering</h3>
-          <h3>Computer art</h3>
-          <h3>Design</h3>
-          <h3>Data</h3>
-          <h3>Business</h3>
-          <h3>Marketing</h3>
-        </div> -->
-
-      </div>
-
-      </div>
     </div>
   </section>
 
-  <!-- Thesis exhibit at Colmar -->
+  <!-- SECTION >> Courses and activities card panels -->
 
-  <!-- General information and articles -->
+  <section id="courses">
+    <div class="courses-container flex">
+
+			<!-- Section title -->
+      <div class="feature-heading">
+        <h2><i class="fa fa-graduation-cap"></i><br>Start Learning</h2>
+      </div>
+
+      <div class="course-content flex">
+
+				<!-- Course Card > Software -->
+        <div class="course-card">
+          <figure class="course-card-img">
+            <img src="./resources/images/course-software.jpg" alt="Computer Photo"/>
+          </figure>
+          <div class="course-card-text">
+            <h3>Software engineering</h3>
+            <h4>courses</h4>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
+        </div>
+
+				<!-- Course Card > Computer art -->
+        <div class="course-card">
+          <figure class="course-card-img">
+            <img src="./resources/images/course-computer-art.jpg" alt="Computer Art Photo"/>
+          </figure>
+          <div class="course-card-text">
+            <h3>Computer art</h3>
+            <h4>courses</h4>
+            <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+          </div>
+        </div>
+
+				<!-- Course Card > Design -->
+        <div class="course-card">
+          <figure class="course-card-img">
+            <img src="./resources/images/course-design.jpg" alt="Design and Photography Photo"/>
+          </figure>
+          <div class="course-card-text">
+            <h3>Design</h3>
+            <h4>courses</h4>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
+        </div>
+
+				<!-- Course Card > Data -->
+        <div class="course-card">
+          <figure class="course-card-img">
+            <img src="./resources/images/course-data.jpg" alt="Data Laptop Photo"/>
+          </figure>
+          <div class="course-card-text">
+            <h3>Data</h3>
+            <h4>courses</h4>
+            <p>Data Science, Big Data, SQL, Data, Visualization</p>
+          </div>
+        </div>
+
+				<!-- Course Card > Business -->
+        <div class="course-card">
+          <figure class="course-card-img">
+            <img src="./resources/images/course-business.jpg" alt="Business Chess Pieces Photo"/>
+          </figure>
+          <div class="course-card-text">
+            <h3>Business</h3>
+            <h4>courses</h4>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
+        </div>
+
+				<!-- Course Card > Marketing -->
+        <div class="course-card">
+          <figure class="course-card-img">
+            <img src="./resources/images/course-marketing.jpg" alt="Marketing Course Photo"/>
+          </figure>
+          <div class="course-card-text">
+            <h3>Marketing</h3>
+            <h4>courses</h4>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION >> Thesis exhibit at Colmar -->
+
+	<!-- WARNING: I have not yet completed organising the HTML with indents and commenting below...  -->
+
   <section id="thesis" class="flex">
     <div class="container flex">
 
@@ -249,13 +265,11 @@
             <img src="./resources/images/thesis-fisma.jpg" alt="Student Orientation Services Photo"/>
           </figure>
           <div class="info-article-text flex">
-            <div class="text-content flex">
+            <summary class="text-content flex">
               <h3>Fisma : Design and Prototype<label id="featured-badge">FEATURED</label></h3>
               <p>Designer showcase of new prototype product</p>
-              <div>
-                <button>Read More</button>
-              </div>
-            </div>
+              <button>Read More</button>
+            </summary>
           </div>
         </div>
 
@@ -264,11 +278,11 @@
             <img src="./resources/images/thesis-now-and-then.jpg" alt="Our Campus Photo"/>
           </figure>
           <div class="info-article-text flex">
-            <div class="text-content flex">
+            <summary class="text-content flex">
               <h3>Now and then</h3>
               <p>Research study about New York</p>
               <button>Read More</button>
-            </div>
+            </summary>
           </div>
         </div>
 
@@ -277,7 +291,7 @@
   </section>
 
 
-  <!-- Footer Panel -->
+  <!-- Website Footer Panel -->
   <footer>
     <div class="container flex">
       <div class="copyright">
@@ -292,8 +306,7 @@
     </div>
   </footer>
 
-<!-- Carousel Javascript for animation of leader feature panel -->
-
+  <!-- Carousel Javascript for animation of leader feature panel slide and fade transitions -->
   <script>
   var myIndex = 0;
   carousel();
