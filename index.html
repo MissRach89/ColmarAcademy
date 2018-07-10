@@ -5,6 +5,7 @@
     <title>Colmar Academy</title>
     <meta charset="UTF-8">
     <meta name="author" content="Rach Taylor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Link to FontAwesome external stylesheet for most graphical icons on site -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
@@ -252,7 +253,7 @@
         <h2 role="heading"><i class="fa fa-book"></i><br>Thesis Exhibit</h2>
       </div>
 
-      <!-- Feature article -->
+      <!-- Feature article TABLET and DESKTOP-->
       <article class="leftcolumn" role="complementary">
         <div class="leftcolumn-wrapper">
           <video src="./resources/video/thesis.mp4" width="100%" height="auto" controls> Video not supported </video>
@@ -262,6 +263,11 @@
           </blockquote>
         </div>
       </article>
+
+      <!-- Feature article MOBILE -->
+      <div id="thesismobile">
+        <video src="./resources/video/thesis.mp4" width="100%" height="auto" controls> Video not supported </video>
+      </div>
 
       <!-- Supporting articles -->
       <aside class="rightcolumn">
@@ -296,6 +302,7 @@
 
       </aside>
     </div>
+
   </section>
 
 
@@ -314,6 +321,7 @@
       </div>
     </div>
   </footer>
+
 
   <!-- SCRIPT >> Carousel Javascript for animation of leader feature panel slide and fade transitions -->
   <script>
