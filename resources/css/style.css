@@ -290,17 +290,11 @@ header .container {
   background-color: #f9fafb;
 }
 
-/* Courses Styles */
+/* COURSES >> General Styles */
 
 #courses {
   background-repeat: repeat;
   background:linear-gradient(0deg,rgba(96,0,247,0.55),rgba(72,106,218,1)),url("../../resources/images/funky-lines.png");
-
-}
-
-.courses-container {
-  max-width: 100%;
-  margin: 0 5rem;
 }
 
 .feature-heading {
@@ -308,44 +302,88 @@ header .container {
   margin: 2rem 0 1rem 0;
 }
 
-.course-content {
-  justify-content: space-between;
-  margin-bottom: 2rem;
-}
-
 #courses h2 {
   text-align: center;
   color: white;
 }
 
-.course-card {
-  background-color: white;
-  transition: box-shadow 0.7s ease;
-  max-width: 28%;
-  min-width: 10rem;
-  margin: 1rem 1rem;
+/* COURSES >> Mobile - Show only the list items on mobile */
+
+@media only screen and (max-width: 780px) {
+  .course-content {
+    display: none;
+  }
+
+  .course-content-mobile {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .course-content-mobile li {
+    background-color: white;
+    padding: 1rem 1rem 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    text-align: center;
+  }
+
+  .course-content-mobile li:hover {
+    background-color: #e5e5e5;
+    padding: 1rem 1rem 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    text-align: center;
+  }
 }
 
-.course-card:hover {
-  box-shadow: 0.25rem 0.25rem 1rem 0px rgba(0,0,0,0.55);
-  cursor: pointer;
+/* COURSES >> Tablet and desktop - Show card tiles inset into custom container width  */
+
+@media only screen and (min-width: 780px) {
+  .courses-container {
+    max-width: 100%;
+    margin: 0 5rem;
+  }
+
+  .course-content {
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .course-card {
+    background-color: white;
+    transition: box-shadow 0.7s ease;
+    max-width: 28%;
+    min-width: 10rem;
+    margin: 1rem 1rem;
+  }
+
+  .course-card:hover {
+    box-shadow: 0.25rem 0.25rem 1rem 0px rgba(0,0,0,0.55);
+    cursor: pointer;
+  }
+
+  .course-card-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .course-card-text {
+    padding: 1.5rem;
+  }
+
+  .course-content-mobile {
+    display: none;
+  }
+
 }
 
-.course-card-img img {
-  width: 100%;
-  height: auto;
-}
-
-.course-card-text {
-  padding: 1.5rem;
-}
-
-/* Thesis styling */
-
+/* THESIS >> General Styles */
 
 #thesis .feature-heading h2 {
   text-align: center;
 }
+
+/* THESIS >> Mobile - fullwidth section, hide all detail except video */
 
 @media only screen and (max-width: 780px) {
   #thesis .leftcolumn, .rightcolumn {
@@ -356,6 +394,8 @@ header .container {
     margin: auto;
   }
 }
+
+/* THESIS >> Tablet and desktop */
 
 @media only screen and (min-width: 780px) {
   #thesismobile {
@@ -375,11 +415,7 @@ header .container {
   }
 }
 
-/* FOOTER >> Styles */
-
-footer {
-  border-top: 1px solid dodgerblue;
-}
+/* FOOTER >> General Styles */
 
 footer .container {
   padding: 1rem 0 3rem 0;
@@ -393,13 +429,27 @@ footer .container {
   text-decoration: none;
 }
 
+/* FOOTER >> Mobile - hide the site links */
+
 @media only screen and (max-width: 780px) {
   .footernav {
     display: none;
   }
+
+  .copyright {
+    margin-top: 1.5rem;
+  }
 }
 
-/* SCRIPT STYLING >> Slideshow Carousel */
+/* FOOTER >> Tablet and desktop - show border in color theme */
+
+@media only screen and (min-width: 780px) {
+  footer {
+    border-top: 1px solid dodgerblue;
+  }
+}
+
+/* SCRIPT STYLING >> Slideshow carousel animations */
 
 .mySlides {
   display:none;
