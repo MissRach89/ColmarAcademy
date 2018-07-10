@@ -31,6 +31,13 @@ body {
   width: 40%;
 }
 
+.feature-heading {
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+
 
 /* Typography Styles */
 
@@ -108,6 +115,8 @@ blockquote {
   margin-bottom: 0.5rem;
 }
 
+
+
 /* Featured badge and other graphical element styling */
 
 #featured-badge {
@@ -120,6 +129,8 @@ blockquote {
   margin-left: 0.5rem;
   opacity: 0.5;
 }
+
+
 
 /* General Button styling */
 
@@ -138,6 +149,8 @@ button {
 button:hover {
   background-color: royalblue;
 }
+
+
 
 /* Header Styles >> General */
 
@@ -182,6 +195,7 @@ header .container {
 }
 
 
+
 /* Graphic panel for style floating over the laderpanel */
 
 @media only screen and (max-width: 780px) {
@@ -200,6 +214,8 @@ header .container {
     height: auto;
   }
 }
+
+
 
 /* Leader Styles >> General */
 
@@ -251,63 +267,100 @@ header .container {
   background-color: royalblue;
 }
 
+
+
 /* Information styles */
 
 #information .container {
   padding: 2rem 0 2rem 0;
 }
 
-.leftcolumn img {
-  margin-bottom: 2rem;
+/* INFORMATION >> Mobile - Only show the articles fullwidth */
+
+@media only screen and (max-width: 780px) {
+  #information .leftcolumn, #information .rightcolumn {
+    display: none;
+  }
+
+  #informationmobile .info-article {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+
+  #informationmobile .info-article-img, #informationmobile .info-article-img img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  #informationmobile .text-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  #informationmobile .info-article:nth-child(3n + 0) {
+    margin: 0;
+  }
+
 }
 
-.info-article {
-  border-bottom: solid 1px #e5e5e5;
-  padding-bottom: 0.75rem;
-  margin-bottom: 1rem;
-  width: 100%;
+/* INFORMATION >> Tablet and desktop - show testimonial and articles */
+
+@media only screen and (min-width: 780px) {
+  #informationmobile {
+    display: none;
+  }
+
+  .leftcolumn img {
+    margin-bottom: 2rem;
+  }
+  .info-article {
+    border-bottom: solid 1px #e5e5e5;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .info-article-img {
+    max-width: 35%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-article-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-article-text {
+    display: flex;
+    justify-content: flex-start;
+    width: 65%;
+    align-items: center;
+  }
+
+  .text-content {
+    padding: 0 1rem 0 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #information .info-article:nth-child(3n + 0) {
+    background-color: #f9fafb;
+  }
+
 }
 
-.info-article-img {
-  max-width: 35%;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.info-article-img img {
-  width: 100%;
-  height: auto;
-}
-
-.info-article-text {
-  display: flex;
-  justify-content: flex-start;
-  width: 65%;
-  align-items: center;
-}
-
-.text-content {
-  padding: 0 1rem 0 1.5rem;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-#information .info-article:nth-child(3n + 0) {
-  background-color: #f9fafb;
-}
 
 /* COURSES >> General Styles */
 
 #courses {
   background-repeat: repeat;
   background:linear-gradient(0deg,rgba(96,0,247,0.55),rgba(72,106,218,1)),url("../../resources/images/funky-lines.png");
-}
-
-.feature-heading {
-  width: 100%;
-  margin: 2rem 0 1rem 0;
 }
 
 #courses h2 {
@@ -344,7 +397,7 @@ header .container {
   }
 }
 
-/* COURSES >> Tablet and desktop - Show card tiles inset into custom container width  */
+/* COURSES >> Tablet and desktop - Show card tiles inset into custom container width */
 
 @media only screen and (min-width: 780px) {
   .courses-container {
@@ -385,11 +438,7 @@ header .container {
 
 }
 
-/* THESIS >> General Styles */
 
-#thesis .feature-heading h2 {
-  text-align: center;
-}
 
 /* THESIS >> Mobile - fullwidth section, hide all detail except video */
 
@@ -422,6 +471,8 @@ header .container {
     background-color: #f9fafb;
   }
 }
+
+
 
 /* FOOTER >> General Styles */
 
@@ -456,6 +507,8 @@ footer .container {
     border-top: 1px solid dodgerblue;
   }
 }
+
+
 
 /* SCRIPT STYLING >> Slideshow carousel animations */
 
