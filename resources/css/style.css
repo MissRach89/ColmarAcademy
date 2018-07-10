@@ -237,17 +237,6 @@ header .container {
   width: 100%;
 }
 
-#leadertext {
-  margin: 3rem 0 5rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#leadertext div {
-  padding-right: 15%;
-}
-
 #leadertext i {
   padding-left: 1rem;
 }
@@ -265,6 +254,50 @@ header .container {
 
 #leadertext button:hover {
   background-color: royalblue;
+}
+
+/* LEADER >> Mobile - wrap slideshow and call to action */
+@media only screen and (max-width: 780px) {
+  #leader .container {
+    margin: 0;
+  }
+
+  #leader .leftcolumn, #leader .rightcolumn {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #leader .leftcolumn-wrapper {
+    margin: 0;
+  }
+
+  #leadertext {
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #leadertext div {
+    width: 100%;
+    margin: 2rem 1.5rem;
+    padding: 0;
+  }
+}
+
+/* LEADER >> Tablet and desktop styles */
+@media only screen and (min-width: 780px) {
+  #leadertext {
+    margin: 3rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #leadertext div {
+    padding-right: 15%;
+  }
 }
 
 
@@ -305,7 +338,7 @@ header .container {
 
 }
 
-/* INFORMATION >> Tablet and desktop - show testimonial and articles */
+/* INFORMATION >> Tablet and desktop - show testimonial and articles. NOTE general styles for article layout are shared with Thesis section */
 
 @media only screen and (min-width: 780px) {
   #informationmobile {
