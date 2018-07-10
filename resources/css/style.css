@@ -184,13 +184,21 @@ header .container {
 
 /* Graphic panel for style floating over the laderpanel */
 
-.graphic-lines {
-  position: absolute;
-  top: 2rem;
-  left: -3rem;
-  z-index: 99;
-  width: 25%;
-  height: auto;
+@media only screen and (max-width: 780px) {
+  .graphic-lines {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .graphic-lines {
+    position: absolute;
+    top: 2rem;
+    left: -3rem;
+    z-index: 99;
+    width: 25%;
+    height: auto;
+  }
 }
 
 /* Leader Styles >> General */
@@ -386,7 +394,7 @@ header .container {
 /* THESIS >> Mobile - fullwidth section, hide all detail except video */
 
 @media only screen and (max-width: 780px) {
-  #thesis .leftcolumn, .rightcolumn {
+  #thesis .leftcolumn, #thesis .rightcolumn {
     display: none;
   }
 
